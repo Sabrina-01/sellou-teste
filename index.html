@@ -5,34 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sellou — Em Desenvolvimento</title>
   <style>
+    :root {
+      --verde-escuro: #008440;
+      --verde-claro: #35dd48;
+      --fundo: #f0fdf4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      background-color: #f0fdf4;
-      color: #008440;
+      background-color: var(--fundo);
+      color: var(--verde-escuro);
       font-family: 'Poppins', sans-serif;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
+      justify-content: center;
+      min-height: 100vh;
       padding: 0 16px;
+      margin: 0;
       text-align: center;
     }
 
+    .logo {
+      max-width: 200px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 24px;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      padding: 24px;
+      background: #ffffff;
+      border: 2px solid var(--verde-claro);
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: 2rem;
+      margin: 0 0 16px 0;
+      color: var(--verde-escuro);
     }
 
     p {
-      font-size: 1.2rem;
-      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+      margin: 8px 0;
       color: #333;
     }
 
     a {
       font-weight: bold;
-      color: #008440;
+      color: var(--verde-escuro);
       text-decoration: none;
     }
 
@@ -40,29 +68,39 @@
       text-decoration: underline;
     }
 
-    .container {
-      max-width: 600px;
-      padding: 20px;
-      background: #ffffff;
-      border: 2px solid #35DD48;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    @media (max-width: 480px) {
+      .logo {
+        max-width: 150px;
+        margin-bottom: 16px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .container {
+        padding: 20px 16px;
+      }
+
+      p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Site em desenvolvimento 🚧</h1>
-        <p>Qualquer dúvida, fale com <strong>Anderson Medeiros</strong>.</p>
-        <div class="contact-info">
-          <p>
-            <a href="mailto:anderson@sellou.com.br">anderson@sellou.com.br</a>
-          </p>
-          <p>
-            <a href="https://wa.me/5547996353818?text=Olá%2C+gostaria+de+saber+mais+sobre+a+Sellou" target="_blank">+55 47 99635-3818</a>
-          </p>
-        </div>
-      </div>
+
+  <img src="img/Logo-sellou-01-b.png" alt="Logo Sellou" class="logo" />
+
+  <div class="container">
+    <h1>Site em desenvolvimento 🚧</h1>
+    <p>Qualquer dúvida, fale com <strong>Anderson Medeiros</strong>.</p>
+    <p><a href="mailto:anderson@sellou.com.br">anderson@sellou.com.br</a></p>
+    <p><a href="https://wa.me/5547996353818?text=Olá%2C+gostaria+de+saber+mais+sobre+a+Sellou." target="_blank">+55 47 99635-3818</a></p>
+  </div>
+
 </body>
 </html>
+
+
 
